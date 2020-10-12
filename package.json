@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "start": "nx serve",
+    "start": "nx serve --maxWorkers=1",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
@@ -27,9 +27,16 @@
   },
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "@types/react-redux": "^7.1.9",
+    "axios": "^0.20.0",
     "document-register-element": "1.13.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.1",
+    "reactstrap": "^8.6.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",

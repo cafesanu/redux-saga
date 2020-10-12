@@ -1,11 +1,19 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { App } from './app/App';
+import { store } from './app/store/store';
 
-import App from './app/app';
+import { Provider as StoreProvider } from 'react-redux';
+
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = 'https://rem-rest-api.herokuapp.com/api';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoreProvider store={store}>
+      <App />
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

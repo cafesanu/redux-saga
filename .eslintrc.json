@@ -20,6 +20,10 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript/no-unsafe-call": "error",
+    "@typescript/no-unsafe-member-access": "error",
+    "@typescript/no-unsafe-return": "error",
+    "@typescript/no-unsafe-assignment": "error",
     "@nrwl/nx/enforce-module-boundaries": [
       "error",
       {

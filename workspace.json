@@ -51,7 +51,8 @@
         "serve": {
           "builder": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "redux-saga:build"
+            "buildTarget": "redux-saga:build",
+            "open": true
           },
           "configurations": {
             "production": {
